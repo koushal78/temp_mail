@@ -1,10 +1,12 @@
 import { Link ,useNavigate} from 'react-router-dom';
-import './Navigation.css';
+import "./Navigation.css";
+import { CiMail } from "react-icons/ci";
 const Navigate=()=>{
     const navigate=useNavigate();
     return(
         <div className='header'>
             <div className="logo">
+                <CiMail className='icon' />
                 <h1>TempMail</h1>
             </div>
             <ul>

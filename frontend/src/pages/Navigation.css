@@ -1,35 +1,79 @@
-.header{
+@import '../App.css';
+.header {
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: blueviolet;
-    width: 100%;
+    background-color: var(--white);
+    width: auto;
     flex-wrap: wrap;
+    padding: 10px 20px;
+    border-radius: 30px 30px 30px 30px;
+    position: sticky;
+    z-index: 100px;
+    top: 0;
+
+}
+
+.icon{
+   /* font-size: 40px; */
+   color: var(--primary);
+   font-size: 40px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5px;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.logo h1 {
+    color: var(--primary);
+    margin: 0;
+    font-weight: bold;
+}
 
-    logo{
-        /* font-size: ; */
+/* Navigation List */
+.header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto; /* pushes UL to right */
+    padding: 0;
+}
+
+.header ul li {
+    list-style: none;
+    margin: 0 20px;
+    
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.header ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Media Query Fix */
+@media screen and (max-width: 760px) {
+    .header ul li a {
+        font-size: 10px;
     }
-
-    ul{
-        
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        li{
-            
-            list-style: none;
-            margin: 0px 20px;
-            
-        }
+    .logo h1{
+        font-size: 1rem;
     }
-
-    @media screen  and (max-height:760){
-        ul{
-            font-size: 2px;
-        }
+    .icon{
+        font-size: 20px;
+    }
+    .header ul li{
+        margin: 0 10px;
     }
 }

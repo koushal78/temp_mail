@@ -1,0 +1,104 @@
+@import '../App.css';
+
+.box {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100px;
+    top: -40px;
+
+}
+
+.mail-box {
+    height: 250px;
+    width: 400px;
+    margin: auto 10px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    gap: 8px;
+    font-weight: 500;
+
+    .input-wrapper {
+        position: relative;
+        display: inline-block;
+
+        input {
+            padding-right: 40px;
+            height: 50px;
+            width: 340px;
+            border-radius: 5px;
+            background-color: var(--secondary);
+            border: 1px solid var(--border);
+            font-size: 20px;
+            padding: 2px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-weight: 500;
+            
+        }
+
+        button {
+            position: absolute;
+            display: inline-block;
+            right: 5px;
+            top: 32px;
+            bottom: 5px;
+            padding: 0 10px;
+            cursor: pointer;
+            width: 100px;
+            background-color: var(--green);
+            border: none;
+            border-radius: 5px;
+            color: var(--white);
+            font-size: 1rem;
+            height: 40px;
+            
+
+            .copyicon{
+                font-size: 1rem;
+            }
+        }
+
+        button:Hover{
+            background-color: #12ab52;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    }
+    .changeAdd{
+        height: 40px;
+        width: 150px;
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: var(--primary);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+
+        .refreshicon {
+            font-size: 1rem;
+        }
+
+    }
+
+    .changeAdd:hover{
+        background-color: #00aaff;
+    }
+
+   
+
+}

@@ -1,0 +1,78 @@
+@import "../pages/Inbox.css";
+
+.inbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .refreshbtn {
+        height: 40px;
+        width: 150px;
+        color: rgb(120, 120, 120);
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    /* ⭐ TABLE STYLING (same nested format) */
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 20px;
+
+        thead {
+            tr {
+                th {
+                    background-color: #333;
+                    color: white;
+                    padding: 12px;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 12px;
+                    border-bottom: 1px solid #ddd;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .title {
+            width: 90%;
+        }
+
+        table {
+            width: 95%;
+        }
+    }
+}
+
+.spin {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

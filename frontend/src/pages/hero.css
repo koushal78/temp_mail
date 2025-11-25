@@ -1,0 +1,32 @@
+@import '../App.css';
+
+.Hero {
+    height: 300px;
+    width: auto;
+    display: flex;
+    background-color: var(--primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-weight: 500;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+
+    @media screen and (max-width: 760px) {
+        h1 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 10px;
+        }
+    }
+}
